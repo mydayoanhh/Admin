@@ -4,12 +4,13 @@ import styled from 'styled-components';
 
 const SidebarContainer = styled.div`
   width: 200px;
-  height: 100vh;
+  height: auto;
   background-color: #333;
   color: #fff;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin: 0;
 `;
 
 const SidebarItem = styled(Link)`
@@ -18,6 +19,7 @@ const SidebarItem = styled(Link)`
   margin-bottom: 20px;
   &:hover {
     color: #f0a500;
+     padding: 0;
   }
 `;
 

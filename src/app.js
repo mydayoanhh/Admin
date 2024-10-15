@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Header from './components/header'; 
 import Dashboard from './components/dashboard';
-import Products from './page/products';
+import Products from './views/products';
 import styled from 'styled-components';
+import FormAddProduct from './views/FormAddProduct';
 
 const MainContainer = styled.div`
   display: flex;
@@ -25,7 +26,9 @@ function App() {
         <Content>
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products" element={<Products/>} />
+
+            <Route path="/products/FormAddProduct" element={<FormAddProduct/>} />
           </Routes>
         </Content>
       </MainContainer>
