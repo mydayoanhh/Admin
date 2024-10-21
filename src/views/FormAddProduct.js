@@ -9,7 +9,7 @@ const FormAddProduct = () => {
     const formData = new FormData(event.target); // Tạo FormData từ form
 
     try {
-      const response = await axios.post('http://localhost:3003/products/FormAddProduct/alert', formData, {
+      const response = await axios.post('http://localhost:3000/products/FormAddProduct/alert', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

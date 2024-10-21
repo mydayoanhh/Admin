@@ -20,7 +20,7 @@ const ReviseProducts = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:3003/products/${productId}`);
+        const response = await axios.get(`http://localhost:3000/products/${productId}`);
         setProduct(response.data);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -57,7 +57,7 @@ const ReviseProducts = () => {
       });
 
       // Gửi yêu cầu PUT để cập nhật sản phẩm
-      await axios.put(`http://localhost:3003/products/${productId}`, formData, {
+      await axios.put(`http://localhost:3000/products/${productId}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

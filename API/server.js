@@ -88,8 +88,8 @@ app.put('/products/:id', upload.single('image_product'), async (req, res) => {
 // Bắt đầu server
 const startServer = async () => {
   await connectDB();
-  app.listen(3003, () => {
-    console.log('Server is running on port 3003');
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000');
   });
 };
 
